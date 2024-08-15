@@ -13,7 +13,7 @@ export const navData = [
   //   path: paths.components,
   //   icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
   // },
-  { title: 'About us', path: paths.about },
+  { title: 'About us', icon: <Iconify width={22} icon="solar:file-bold-duotone" />, path: paths.about },
   // {
   //   title: 'Pages',
   //   path: '/pages',
