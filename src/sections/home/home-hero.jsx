@@ -106,7 +106,29 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`The starting point for your next project based on Python. \nEasy customization to stay organized and helps you build apps faster and better.`}
+        {`The starting point for your next project based on \n`}
+ 
+       
+        <Box
+          component={m.span}
+          animate={{ backgroundPosition: '200% center' }}
+          transition={{
+            duration: 20,
+            ease: 'linear',
+            repeat: Infinity,
+            repeatType: 'reverse',
+          }}
+          sx={{
+            ...textGradient(
+              `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
+            ),
+            backgroundSize: '400%',
+            ml: { xs: 0.75, md: 1, xl: 1.5 },
+          }}
+        >
+          Python
+        </Box>
+        {`\n Easy customization to stay organized and helps you build apps faster and better.`}
       </Typography>
     </MInview>
   );
