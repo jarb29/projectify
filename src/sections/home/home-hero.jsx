@@ -70,9 +70,9 @@ export function HomeHero({ sx, ...other }) {
         }}
       >
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
-          Boost your productibility
+          Boost your 
         </Box>
-        with
+        productibility with
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
