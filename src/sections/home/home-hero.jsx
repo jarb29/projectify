@@ -108,7 +108,7 @@ export function HomeHero({ sx, ...other }) {
       >
         {`The starting point for your next project based on \n`}
  
-       
+        </Typography>
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
@@ -128,6 +128,14 @@ export function HomeHero({ sx, ...other }) {
         >
           Python
         </Box>
+        <Typography
+        variant="body2"
+        sx={{
+          mx: 'auto',
+          [theme.breakpoints.up(smKey)]: { whiteSpace: 'pre' },
+          [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
+        }}
+      >
         {`\n Easy customization to stay organized and helps you build apps faster and better.`}
       </Typography>
     </MInview>
