@@ -136,7 +136,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`\n Easy customization to stay organized and helps \nyou build apps faster and better.`}
+        {`\n Easy customization to stay organized and helps`}
       </Typography>
       <Typography
         variant="body2"
