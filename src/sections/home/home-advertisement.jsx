@@ -38,7 +38,7 @@ export function HomeAdvertisement({ sx, ...other }) {
         sx={{ m: 0, color: 'common.white', typography: { xs: 'h2', md: 'h1' } }}
       >
         Get started with
-        <br /> Minimal kit
+        <br /> Projectify
         <Box
           component="span"
           sx={{
@@ -61,7 +61,7 @@ export function HomeAdvertisement({ sx, ...other }) {
         flexWrap="wrap"
         justifyContent={{ xs: 'center', md: 'flex-start' }}
       >
-        <m.div variants={varFade({ distance: 24 }).inRight}>
+        {/* <m.div variants={varFade({ distance: 24 }).inRight}>
           <Button
             color="primary"
             size="large"
@@ -72,7 +72,7 @@ export function HomeAdvertisement({ sx, ...other }) {
           >
             Purchase now
           </Button>
-        </m.div>
+        </m.div> */}
 
         <m.div variants={varFade({ distance: 24 }).inRight}>
           <Button
@@ -89,7 +89,7 @@ export function HomeAdvertisement({ sx, ...other }) {
               '&:hover': { borderColor: 'currentColor' },
             }}
           >
-            Get free version
+            GitHub Repo free
           </Button>
         </m.div>
       </Stack>

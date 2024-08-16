@@ -48,10 +48,10 @@ export function HomeZoneUI({ sx, ...other }) {
 
   const renderDescription = (
     <SectionTitle
-      caption="Looking For a"
-      title="Landing page"
-      txtGradient="template?"
-      description="Fuse with dashboards to produce a superior product."
+      caption="How"
+      title="Getting "
+      txtGradient="Started?"
+      description="Prerequisites: Python 3.8 or higher.."
       sx={{ textAlign: { xs: 'center', md: 'left' } }}
     />
   );
@@ -73,7 +73,7 @@ export function HomeZoneUI({ sx, ...other }) {
       <Box
         component="img"
         alt="Zone landing page"
-        src={`${CONFIG.site.basePath}/assets/images/home/zone-landing.webp`}
+        src={`${CONFIG.site.basePath}/assets/images/home/pes.webp`}
         sx={{
           width: 720,
           objectFit: 'cover',
@@ -83,7 +83,7 @@ export function HomeZoneUI({ sx, ...other }) {
         }}
       />
 
-      <Box sx={{ p: 0.5, borderRadius: '0 0 8px 8px', bgcolor: 'common.white' }}>
+      {/* <Box sx={{ p: 0.5, borderRadius: '0 0 8px 8px', bgcolor: 'common.white' }}>
         <Button
           variant="contained"
           target="_blank"
@@ -98,7 +98,7 @@ export function HomeZoneUI({ sx, ...other }) {
         >
           Visit Zone UI
         </Button>
-      </Box>
+      </Box> */}
     </Stack>
   );
 

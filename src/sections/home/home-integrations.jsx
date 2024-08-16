@@ -42,20 +42,20 @@ export function HomeIntegrations({ sx, ...other }) {
 
   const renderDescription = (
     <SectionTitle
-      caption="Integrations"
-      title="Robust integration"
+      caption="Key Features"
+      title="Feactures"
       txtGradient="framework"
       description={
         <>
           <Box component="span" sx={{ mb: 1, display: 'block' }}>
-            A comprehensive suite of integrations offers diverse functionalities.
+          Generates the basic project structure with predefined folders and files.
           </Box>
           <Box
             component="span"
             sx={{ fontStyle: 'italic', color: 'text.disabled', typography: 'caption' }}
           >
-            * Only includes authentication methods.
-            <br />* Database not included.
+            * Base Files Configuration.
+            <br />* Configures essential files like pyproject.toml, .gitignore, Makefile, among others.
           </Box>
         </>
       }

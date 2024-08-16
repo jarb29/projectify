@@ -70,9 +70,9 @@ export function HomeHero({ sx, ...other }) {
         }}
       >
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
-          Boost your building
+          Boost your productibility
         </Box>
-        process with
+        with
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
@@ -90,7 +90,7 @@ export function HomeHero({ sx, ...other }) {
             ml: { xs: 0.75, md: 1, xl: 1.5 },
           }}
         >
-          Minimal
+          Projectify
         </Box>
       </Box>
     </MInview>
@@ -106,7 +106,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`The starting point for your next project is based on MUI. \nEasy customization helps you build apps faster and better.`}
+        {`The starting point for your next project based on Python. \nEasy customization to stay organized and helps you build apps faster and better.`}
       </Typography>
     </MInview>
   );
@@ -281,9 +281,9 @@ export function HomeHero({ sx, ...other }) {
             <m.div style={{ y: y1 }}>{renderHeading}</m.div>
             <m.div style={{ y: y2 }}>{renderText}</m.div>
           </Stack>
-          <m.div style={{ y: y3 }}>{renderRatings}</m.div>
-          <m.div style={{ y: y4 }}>{renderButtons}</m.div>
-          <m.div style={{ y: y5 }}>{renderIcons}</m.div>
+          {/* <m.div style={{ y: y3 }}>{renderRatings}</m.div> */}
+          {/* <m.div style={{ y: y4 }}>{renderButtons}</m.div> */}
+          {/* <m.div style={{ y: y5 }}>{renderIcons}</m.div> */}
         </Container>
 
         <HeroBackground />

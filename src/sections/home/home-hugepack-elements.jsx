@@ -45,7 +45,7 @@ export function HomeHugePackElements({ sx, ...other }) {
           >
             <Grid xs={12} md={6} lg={7}>
               <SectionCaption title="Interface Starter Kit" />
-              <SectionTitle title="Large bundle of" txtGradient="elements" sx={{ mt: 3 }} />
+              <SectionTitle title="Our " txtGradient="projects" sx={{ mt: 3 }} />
             </Grid>
 
             <Grid xs={12} md={6} lg={5}>
@@ -67,7 +67,7 @@ export function HomeHugePackElements({ sx, ...other }) {
             </Grid>
           </Grid>
 
-          <m.div variants={varFade({ distance: 24 }).inUp}>
+          {/* <m.div variants={varFade({ distance: 24 }).inUp}>
             <Button
               size="large"
               color="inherit"
@@ -80,7 +80,7 @@ export function HomeHugePackElements({ sx, ...other }) {
             >
               Browse components
             </Button>
-          </m.div>
+          </m.div> */}
         </Container>
       </MotionViewport>
 

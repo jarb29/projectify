@@ -32,8 +32,8 @@ export function HomeMinimal({ sx, ...other }) {
     <>
       <SectionTitle
         caption="Visualizing Success"
-        title="What's in"
-        txtGradient="Minimal?"
+        title="Problems That Projectify"
+        txtGradient="Solve?"
         sx={{ mb: { xs: 5, md: 8 }, textAlign: { xs: 'center', md: 'left' } }}
       />
 
@@ -49,7 +49,7 @@ export function HomeMinimal({ sx, ...other }) {
             component={m.div}
             key={item.title}
             variants={varFade({ distance: 24 }).inUp}
-            gap={3}
+            gap={1}
             display="flex"
           >
             <SvgColor src={item.icon} sx={{ width: 40, height: 40 }} />
@@ -135,17 +135,27 @@ export function HomeMinimal({ sx, ...other }) {
 const ITEMS = [
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-make-brand.svg`,
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    title: 'Structuring',
+    description: 'Projectify automates this process, ensuring a consistent and professional structure.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-design.svg`,
-    title: 'UI & UX design',
-    description: 'The kit is built on the principles of the atomic design system.',
+    title: 'Environment Setup',
+    description: 'Projectify creates virtual environments, configures the IDE, and prepares everything needed to start coding immediately.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
+    title: 'Testing',
+    description: 'Projectify sets up pytest so you can start writing and running tests right away.',
+  },
+  {
+    icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
+    title: 'Linter and Formatter',
+    description: 'Projectify configures Ruff to ensure your code follows best practices and quality standards.',
+  },
+  {
+    icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
+    title: 'Automatic Documentation',
+    description: 'MkDocs and mkdocstrings, makes easy to create useful and professional documentation.',
   },
 ];
