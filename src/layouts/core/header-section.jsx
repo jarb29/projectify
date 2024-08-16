@@ -38,6 +38,7 @@ export function HeaderSection({
   ...other
 }) {
   const theme = useTheme();
+  // console.log(slots, 'slots')
 
   const { offsetTop } = useScrollOffSetTop();
 

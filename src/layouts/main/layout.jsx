@@ -26,9 +26,10 @@ export function MainLayout({ sx, data, children }) {
 
   const homePage = pathname === '/';
 
-  const layoutQuery = 'md';
+  const layoutQuery = 'xs';
 
   const navData = data?.nav ?? mainNavData;
+ 
 
   return (
     <>
