@@ -138,6 +138,16 @@ export function HomeHero({ sx, ...other }) {
       >
         {`\n Easy customization to stay organized and helps \nyou build apps faster and better.`}
       </Typography>
+      <Typography
+        variant="body2"
+        sx={{
+          mx: 'auto',
+          [theme.breakpoints.up(smKey)]: { whiteSpace: 'pre' },
+          [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
+        }}
+      >
+        {`\nyou build apps faster and better.`}
+      </Typography>
     </MInview>
   );
 
