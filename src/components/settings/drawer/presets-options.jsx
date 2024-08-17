@@ -10,7 +10,6 @@ import { SvgColor } from '../../svg-color';
 // ----------------------------------------------------------------------
 
 export function PresetsOptions({ value, options, onClickOption }) {
-  console.log(options, 'options')
   return (
     <Block title="Presets">
       <Box component="ul" gap={1.5} display="grid" gridTemplateColumns="repeat(3, 1fr)">
