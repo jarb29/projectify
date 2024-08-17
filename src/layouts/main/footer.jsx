@@ -7,9 +7,10 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
+import Button from '@mui/material/Button';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { Iconify } from 'src/components/iconify';
 
 import { _socials } from 'src/_mock';
 
@@ -160,7 +161,7 @@ export function HomeFooter({ sx }) {
         <Box sx={{ mt: 1, typography: 'caption' }}>
           © All rights reserved.
           <br /> made by
-          <Link href="https://minimals.cc/"> minimals.cc </Link>
+          <Link href="mailto:jarb29@gmail.com?subject=Question from Customer" > jarb29 </Link>
         </Box>
       </Container>
     </Box>
