@@ -33,7 +33,7 @@ export function MainLayout({ sx, data, children }) {
 
   return (
     <>
-      <NavMobile data={navData} open={mobileNavOpen.value} onClose={mobileNavOpen.onFalse} />
+      {/* <NavMobile data={navData} open={mobileNavOpen.value} onClose={mobileNavOpen.onFalse} /> */}
 
       <LayoutSection
         /** **************************************
