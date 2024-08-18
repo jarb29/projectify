@@ -281,7 +281,7 @@ export function HomeFAQs({ sx, ...other }) {
         <Button
           color="inherit"
           variant="contained"
-          href="mailto:nibaldo.pino.araya@gmail.com?subject=Question from Customer"
+          href="mailto:npinoa.ai@gmail.com?subject=Question from Customer"
           startIcon={<Iconify icon="fluent:mail-24-filled" />}
         >
           Contact us
