@@ -7,6 +7,7 @@ import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
 import { Logo } from 'src/components/logo';
+import { Iconify } from 'src/components/iconify';
 import IconButton from '@mui/material/IconButton';
 import { HeaderSection } from './header-section';
 import { Searchbar } from '../components/searchbar';
@@ -19,7 +20,7 @@ import { LanguagePopover } from '../components/language-popover';
 import { ContactsPopover } from '../components/contacts-popover';
 import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsDrawer } from '../components/notifications-drawer';
-import { Iconify } from 'src/components/iconify';
+
 
 // ----------------------------------------------------------------------
 
