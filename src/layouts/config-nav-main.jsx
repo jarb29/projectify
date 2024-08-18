@@ -14,7 +14,8 @@ export const navData = [
   //   icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
   // },
   { title: 'About us', icon: <Iconify width={22} icon="solar:file-bold-duotone" />, path: paths.about },
-  { title: 'Twitter',  icon: <Iconify width={22} icon="solar:file-bold-duotone" />,  path: paths.post.root },
+  {  title: <Iconify width={16} icon="ion:logo-twitter"  />,  path: paths.post.root },
+  // {  title: <Iconify width={16} icon="ion:logo-github"  />,  path: paths.post.root },
   // {
   //   title: 'Pages',
   //   path: '/pages',

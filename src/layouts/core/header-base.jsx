@@ -14,10 +14,12 @@ import { MenuButton } from '../components/menu-button';
 import { SignInButton } from '../components/sign-in-button';
 import { AccountDrawer } from '../components/account-drawer';
 import { SettingsButton } from '../components/settings-button';
+import IconButton from '@mui/material/IconButton';
 import { LanguagePopover } from '../components/language-popover';
 import { ContactsPopover } from '../components/contacts-popover';
 import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsDrawer } from '../components/notifications-drawer';
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
@@ -159,6 +161,16 @@ export function HeaderBase({
               {/* {signIn && <SignInButton />} */}
 
               {/* -- Purchase button -- */}
+
+              <IconButton  
+              variant="outlined"
+              target="_blank"
+              rel="noopener"
+              href={paths.freeUI} color="inherit">
+                <Iconify width={16} icon="ion:logo-github" sx={{ mr: 1.3 }} />
+              </IconButton>
+
+
               {/* {purchase && (
                 <Button
                   data-slot="purchase"

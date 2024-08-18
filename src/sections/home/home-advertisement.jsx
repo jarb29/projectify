@@ -82,14 +82,14 @@ export function HomeAdvertisement({ sx, ...other }) {
             target="_blank"
             rel="noopener"
             href={paths.freeUI}
-            endIcon={<Iconify width={16} icon="eva:external-link-fill" sx={{ mr: 0.5 }} />}
+            endIcon={<Iconify width={16} icon="ion:logo-github" sx={{ mr: 0.5 }} />}
             sx={{
               color: 'common.white',
               borderColor: 'common.white',
               '&:hover': { borderColor: 'currentColor' },
             }}
           >
-            GitHub Repo free
+            GitHub
           </Button>
         </m.div>
       </Stack>
