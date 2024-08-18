@@ -162,13 +162,35 @@ export function HeaderBase({
               {/* {signIn && <SignInButton />} */}
 
               {/* -- Purchase button -- */}
-
               <IconButton  
               variant="outlined"
-              target="_blank"
               rel="noopener"
-              href={paths.freeUI} color="inherit">
-                <Iconify width={16} icon="ion:logo-github" sx={{ mr: 1.3 }} />
+              href={paths.post.root}
+
+              sx={{
+                display: 'none',
+                marginRight: '-10px', // or use marginLeft on the next 
+                marginLeft: '10px', // or use marginLeft on the next 
+                [theme.breakpoints.up(layoutQuery)]: {
+                  display: 'inline-flex',
+                },
+              }}>
+                <Iconify  icon="ion:logo-twitter" />
+              </IconButton>
+
+              <IconButton  
+              // variant="outlined"
+              target="_blank"
+              // rel="noopener"
+              href={paths.freeUI} 
+              // color="inherit"
+              sx={{
+                display: 'none',
+                [theme.breakpoints.up(layoutQuery)]: {
+                  display: 'inline-flex',
+                },
+              }}>
+                <Iconify icon="ion:logo-github"/>
               </IconButton>
 
 
