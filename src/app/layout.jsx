@@ -40,7 +40,8 @@ export const viewport = {
 export default async function RootLayout({ children }) {
   const lang = CONFIG.isStaticExport ? 'en' : await detectLanguage();
 
-  const settings = CONFIG.isStaticExport ? defaultSettings : await detectSettings();
+  // const settings = CONFIG.isStaticExport ? defaultSettings : await detectSettings();
+  const settings =  defaultSettings;
 
   return (
     <html lang={lang ?? 'en'} suppressHydrationWarning>
