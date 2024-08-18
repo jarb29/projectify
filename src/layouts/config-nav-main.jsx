@@ -7,13 +7,13 @@ import { Iconify } from 'src/components/iconify';
 // ----------------------------------------------------------------------
 
 export const navData = [
-  { title: 'Home', path: '/', icon: <Iconify width={22} icon="solar:home-2-bold-duotone" /> },
+  { title: 'Home', path: '/', icon: <Iconify width={16} icon="solar:home-2-bold-duotone" /> },
   // {
   //   title: 'Components',
   //   path: paths.components,
   //   icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
   // },
-  { title: 'About us', icon: <Iconify width={22} icon="solar:file-bold-duotone" />, path: paths.about },
+  { title: 'About us', icon: <Iconify width={16} icon="solar:file-bold-duotone" />, path: paths.about },
   {  title: <Iconify width={16} icon="ion:logo-twitter"  />,  path: paths.post.root },
   // {  title: <Iconify width={16} icon="ion:logo-github"  />,  path: paths.post.root },
   // {
