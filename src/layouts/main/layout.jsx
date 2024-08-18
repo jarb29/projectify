@@ -64,7 +64,7 @@ export function MainLayout({ sx, data, children }) {
                   sx={{
                     display: 'none',
                     [theme.breakpoints.up(layoutQuery)]: {
-                      mr: 2.5,
+                      mr: 0,
                       display: 'flex',
                     },
                   }}

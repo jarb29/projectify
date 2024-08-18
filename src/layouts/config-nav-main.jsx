@@ -13,8 +13,8 @@ export const navData = [
   //   path: paths.components,
   //   icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
   // },
-  { title: 'About us', icon: <Iconify width={16} icon="solar:file-bold-duotone" />, path: paths.about },
-  {  title: <Iconify width={16} icon="ion:logo-twitter"  />,  path: paths.post.root },
+  { title: 'Blog', icon: <Iconify width={16} icon="solar:file-bold-duotone" />, path: paths.about },
+  {  title: 'Twitter', icon:<Iconify width={16} icon="ion:logo-twitter"  />,  path: paths.post.root },
   // {  title: <Iconify width={16} icon="ion:logo-github"  />,  path: paths.post.root },
   // {
   //   title: 'Pages',
