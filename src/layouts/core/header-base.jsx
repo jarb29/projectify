@@ -165,7 +165,7 @@ export function HeaderBase({
               <IconButton  
               variant="outlined"
               rel="noopener"
-              href={paths.post.root}
+              href={paths.contact}
 
               sx={{
                 display: 'none',
