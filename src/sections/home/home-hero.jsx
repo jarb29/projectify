@@ -70,9 +70,9 @@ export function HomeHero({ sx, ...other }) {
         }}
       >
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
-          Boost your 
+          Boost your productivity with
         </Box>
-        productivity with
+
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
@@ -90,8 +90,13 @@ export function HomeHero({ sx, ...other }) {
             ml: { xs: 0.75, md: 1, xl: 1.5 },
           }}
         >
+      <Typography
+        variant="h1"
+      >
           Projectify!
+        </Typography>
         </Box>
+
       </Box>
     </MInview>
   );
