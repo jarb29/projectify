@@ -112,7 +112,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`The starting point for your next project based on`}
+        The starting point for your next project based on
         
  
         </Typography>
@@ -143,7 +143,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-                {`Easy customization to stay organized and helps.`}
+                Easy customization to stay organized and helps.
       
       </Typography>
       <Typography
