@@ -185,7 +185,7 @@ export function HomeFAQs({ sx, ...other }) {
 
   const renderDescription = (
     <SectionTitle
-      caption="Key Feactures"
+      caption="Key Attributes"
       title="We’ve got "
       txtGradient="You"
       sx={{ textAlign: 'center' }}
