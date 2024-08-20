@@ -72,7 +72,7 @@ export function HomeHero({ sx, ...other }) {
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
           Boost your 
         </Box>
-        productibility with
+        productivity with
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
@@ -170,7 +170,7 @@ export function HomeHero({ sx, ...other }) {
             />
           ))}
         </AvatarGroup>
-        160+ Happy customers
+        160000+ Users
       </Box>
     </MInview>
   );
