@@ -32,7 +32,7 @@ export function HomeMinimal({ sx, ...other }) {
     <>
       <SectionTitle
         caption="Visualizing Success"
-        title="Problems That Projectify"
+        title="Problems That Projectify!"
         txtGradient="Solve?"
         sx={{ mb: { xs: 5, md: 8 }, textAlign: { xs: 'center', md: 'left' } }}
       />
@@ -136,22 +136,22 @@ const ITEMS = [
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-make-brand.svg`,
     title: 'Structuring',
-    description: 'Projectify automates this process, ensuring a consistent and professional structure.',
+    description: 'Projectify! automates this process, ensuring a consistent and professional structure.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-design.svg`,
     title: 'Environment Setup',
-    description: 'Projectify creates virtual environments, configures the IDE, and prepares everything needed to start coding immediately.',
+    description: 'Projectify! creates virtual environments, configures the IDE, and prepares everything needed to start coding immediately.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
     title: 'Testing',
-    description: 'Projectify sets up pytest so you can start writing and running tests right away.',
+    description: 'Projectify! sets up pytest so you can start writing and running tests right away.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
     title: 'Linter and Formatter',
-    description: 'Projectify configures Ruff to ensure your code follows best practices and quality standards.',
+    description: 'Projectify! configures Ruff to ensure your code follows best practices and quality standards.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,

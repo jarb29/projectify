@@ -4,7 +4,7 @@ import { AboutView } from 'src/sections/about/view';
 
 // ----------------------------------------------------------------------
 
-export const metadata = { title: `About us -  Projectify` };
+export const metadata = { title: `About us -  Projectify!` };
 
 export default function Page() {
   return <AboutView />;

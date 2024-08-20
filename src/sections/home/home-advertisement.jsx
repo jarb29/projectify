@@ -38,7 +38,7 @@ export function HomeAdvertisement({ sx, ...other }) {
         sx={{ m: 0, color: 'common.white', typography: { xs: 'h2', md: 'h1' } }}
       >
         Get started with
-        <br /> Projectify
+        <br /> Projectify!
         <Box
           component="span"
           sx={{
