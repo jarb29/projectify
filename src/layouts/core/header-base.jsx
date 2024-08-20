@@ -162,6 +162,22 @@ export function HeaderBase({
               {/* {signIn && <SignInButton />} */}
 
               {/* -- Purchase button -- */}
+                <Button
+                  data-slot="purchase"
+                  variant="outline"
+                  // rel="noopener"
+                  target="_blank"
+                  href={'https://cyberingeniero.github.io/projectify/'}
+                  sx={{
+                    marginRight: '-10px',
+                    display: 'none',
+                    [theme.breakpoints.up(layoutQuery)]: {
+                      display: 'inline-flex',
+                    },
+                  }}
+                >
+                  Docs
+                </Button>
               <IconButton  
               variant="outlined"
               rel="noopener"
@@ -170,7 +186,7 @@ export function HeaderBase({
               sx={{
                 display: 'none',
                 marginRight: '-10px', // or use marginLeft on the next 
-                marginLeft: '10px', // or use marginLeft on the next 
+                marginLeft: '-10px', // or use marginLeft on the next 
                 [theme.breakpoints.up(layoutQuery)]: {
                   display: 'inline-flex',
                 },
