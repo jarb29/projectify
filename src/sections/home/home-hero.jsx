@@ -111,7 +111,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`The starting point for your next project based on \n`}
+        The starting point for your next project based on
  
         </Typography>
         <Box
@@ -141,7 +141,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`\n Easy customization to stay organized and helps`}
+        {`Easy customization to stay organized and helps`}
       </Typography>
       <Typography
         variant="body2"
@@ -151,7 +151,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`\nyou build apps faster and better.`}
+        {`you build apps faster and better.`}
       </Typography>
     </MInview>
   );
