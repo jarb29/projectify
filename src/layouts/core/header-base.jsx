@@ -167,7 +167,7 @@ export function HeaderBase({
                   variant="outline"
                   // rel="noopener"
                   target="_blank"
-                  href={'https://cyberingeniero.github.io/projectify/'}
+                  href='https://cyberingeniero.github.io/projectify/'
                   sx={{
                     marginRight: '-10px',
                     display: 'none',
