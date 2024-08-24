@@ -6,6 +6,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
+import { toast } from 'src/components/snackbar';
 import { Logo } from 'src/components/logo';
 import { Iconify } from 'src/components/iconify';
 import IconButton from '@mui/material/IconButton';
@@ -20,7 +21,7 @@ import { LanguagePopover } from '../components/language-popover';
 import { ContactsPopover } from '../components/contacts-popover';
 import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsDrawer } from '../components/notifications-drawer';
-import { toast } from 'src/components/snackbar';
+
 
 
 // ----------------------------------------------------------------------
