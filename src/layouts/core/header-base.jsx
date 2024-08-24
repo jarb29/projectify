@@ -20,6 +20,7 @@ import { LanguagePopover } from '../components/language-popover';
 import { ContactsPopover } from '../components/contacts-popover';
 import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsDrawer } from '../components/notifications-drawer';
+import { toast } from 'src/components/snackbar';
 
 
 // ----------------------------------------------------------------------
@@ -119,6 +120,7 @@ export function HeaderBase({
 
             {slots?.rightAreaStart}
 
+
             <Box
               data-area="right"
               sx={{
@@ -128,6 +130,13 @@ export function HeaderBase({
               }}
             >
               {/* -- Help link -- */}
+              {toast.warning('Projectify', {
+                id: ' ',
+                description: 'Born on 01/06/2024 as one of the best',
+                closeButton: true,
+                position:  'top-center'
+              })
+            }   
               {helpLink && (
                 <Link
                   data-slot="help-link"
