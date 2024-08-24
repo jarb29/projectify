@@ -21,11 +21,11 @@ import { SocialIcon } from 'src/components/iconify';
 
 const LINKS = [
   {
-    headline: 'Minimal',
+    headline: 'Projectify',
     children: [
       { name: 'About us', href: paths.about },
-      { name: 'Contact us', href: paths.contact },
-      { name: 'FAQs', href: paths.faqs },
+      // { name: 'Contact us', href: paths.contact },
+      // { name: 'FAQs', href: paths.faqs },
     ],
   },
   {
@@ -35,7 +35,7 @@ const LINKS = [
       { name: 'Privacy policy', href: '#' },
     ],
   },
-  { headline: 'Contact', children: [{ name: 'support@minimals.cc', href: '#' }] },
+  { headline: 'Contact', children: [{ name: 'npinoa.ai@gmail.com', href: '#' }] },
 ];
 
 // ----------------------------------------------------------------------
@@ -74,8 +74,8 @@ export function Footer({ layoutQuery, sx }) {
                 [theme.breakpoints.up(layoutQuery)]: { mx: 'unset' },
               }}
             >
-              The starting point for your next project with Minimal UI Kit, built on the newest
-              version of Material-UI ©, ready to be customized to your style.
+              The starting point for your next project, built on the newest
+              version of Projectify©, ready to be customized to your style.
             </Typography>
 
             <Stack

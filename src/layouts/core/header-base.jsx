@@ -114,7 +114,9 @@ export function HeaderBase({
           </>
         ),
         rightArea: (
+          
           <>
+
             {slots?.rightAreaStart}
 
             <Box

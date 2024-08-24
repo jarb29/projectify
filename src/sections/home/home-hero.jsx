@@ -10,6 +10,7 @@ import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
+import { toast } from 'src/components/snackbar';
 
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
@@ -54,7 +55,8 @@ export function HomeHero({ sx, ...other }) {
   );
 
   const renderHeading = (
-    <MInview>
+    <MInview>       
+
       <Box
         component="h1"
         display="flex"
@@ -69,6 +71,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 72, lineHeight: '90px' },
         }}
       >
+
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
           Boost your 
         </Box>
@@ -96,8 +99,7 @@ export function HomeHero({ sx, ...other }) {
       >
           Projectify!
         </Typography>
-        </Box>
-
+      </Box>
       </Box>
     </MInview>
   );
@@ -113,8 +115,6 @@ export function HomeHero({ sx, ...other }) {
         }}
       >
         The starting point for your next project based on
-        
- 
         </Typography>
         <Box
           component={m.span}
@@ -143,8 +143,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-                Easy customization to stay organized and helps.
-      
+      Easy customization to stay organized and helps.
       </Typography>
       <Typography
         variant="body2"
@@ -243,7 +242,6 @@ export function HomeHero({ sx, ...other }) {
       </MInview>
     </Box>
   );
-
   const renderIcons = (
     <Stack spacing={3} sx={{ textAlign: 'center' }}>
       <MInview>
@@ -293,6 +291,13 @@ export function HomeHero({ sx, ...other }) {
       }}
       {...other}
     >
+            {toast.warning('Projectify', {
+                id: ' ',
+                description: 'Born on 01/06/2024 as the leader on the field',
+                closeButton: true,
+                position:  'top-center'
+              })
+            }    
       <Box
         component={m.div}
         style={{ opacity }}
