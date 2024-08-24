@@ -293,7 +293,7 @@ export function HomeHero({ sx, ...other }) {
     >
             {toast.warning('Projectify', {
                 id: ' ',
-                description: 'Born on 01/06/2024 as the leader on the field',
+                description: 'Born on 01/06/2024 as one of the best',
                 closeButton: true,
                 position:  'top-right'
               })
