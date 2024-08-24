@@ -6,7 +6,6 @@ import { styled, useTheme } from '@mui/material/styles';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
-import { toast } from 'src/components/snackbar';
 import { Logo } from 'src/components/logo';
 import { Iconify } from 'src/components/iconify';
 import IconButton from '@mui/material/IconButton';
@@ -21,7 +20,6 @@ import { LanguagePopover } from '../components/language-popover';
 import { ContactsPopover } from '../components/contacts-popover';
 import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsDrawer } from '../components/notifications-drawer';
-
 
 
 // ----------------------------------------------------------------------
@@ -121,7 +119,6 @@ export function HeaderBase({
 
             {slots?.rightAreaStart}
 
-
             <Box
               data-area="right"
               sx={{
@@ -131,13 +128,6 @@ export function HeaderBase({
               }}
             >
               {/* -- Help link -- */}
-              {toast.warning('Projectify', {
-                id: ' ',
-                description: 'Born on 01/06/2024 as one of the best',
-                closeButton: true,
-                position:  'top-center'
-              })
-            }   
               {helpLink && (
                 <Link
                   data-slot="help-link"
