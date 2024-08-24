@@ -295,7 +295,7 @@ export function HomeHero({ sx, ...other }) {
                 id: ' ',
                 description: 'Born on 01/06/2024 as the leader on the field',
                 closeButton: true,
-                position:  'top-left'
+                position:  'top-right'
               })
             }    
       <Box
