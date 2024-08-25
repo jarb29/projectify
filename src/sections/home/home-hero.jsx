@@ -46,7 +46,7 @@ export function HomeHero({ sx, ...other }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIRender(false);
-    }, 2000 * 1000); // time is in milliseconds, so 2000 sec = 2000 * 1000 ms
+    }, 2000 ); // time is in milliseconds, so 2000 sec = 2000 * 1000 ms
 
     // clean up function
     return () => clearTimeout(timer);
