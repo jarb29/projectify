@@ -10,7 +10,6 @@ import { HomeFAQs } from '../home-faqs';
 import { HomeZoneUI } from '../home-zone-ui';
 import { HomeMinimal } from '../home-minimal';
 import { HomePricing } from '../home-pricing';
-
 import { HomeForDesigner } from '../home-for-designer';
 import { HomeTestimonials } from '../home-testimonials';
 import { HomeIntegrations } from '../home-integrations';
@@ -33,6 +32,8 @@ export function HomeView() {
       />
 
       <BackToTop />
+
+ 
 
       <HomeHero />
 
