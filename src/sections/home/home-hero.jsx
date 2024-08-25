@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import { m, useScroll, useSpring, useTransform, useMotionValueEvent } from 'framer-motion';
 
@@ -42,6 +42,15 @@ export function HomeHero({ sx, ...other }) {
   const scroll = useScrollPercent();
 
   const mdUp = useResponsive('up', mdKey);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIRender(false);
+    }, 2000 * 1000); // time is in milliseconds, so 2000 sec = 2000 * 1000 ms
+
+    // clean up function
+    return () => clearTimeout(timer);
+  }, []); // [] means run once after initial render
 
   const distance = mdUp ? scroll.percent : 0;
 
