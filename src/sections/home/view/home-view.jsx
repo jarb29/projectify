@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect } from 'react';
 
 import Stack from '@mui/material/Stack';
@@ -24,7 +23,7 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 
 export function HomeView() {
   const pageProgress = useScrollProgress();
-  
+
 
   useEffect(() => {
     toast.warning('Projectify', 
