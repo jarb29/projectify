@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect  } from 'react';
+
 import { m, useScroll, useSpring, useTransform, useMotionValueEvent } from 'framer-motion';
 
 import Box from '@mui/material/Box';
@@ -14,6 +15,7 @@ import Avatar, { avatarClasses } from '@mui/material/Avatar';
 
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { toast } from 'src/components/snackbar';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -35,6 +37,18 @@ const lgKey = 'lg';
 
 export function HomeHero({ sx, ...other }) {
   const theme = useTheme();
+
+  useEffect(() => {
+    toast.warning('Projectify', 
+      {
+        duration: '2000',
+        id: ' ',
+        description: 'Born on 01/06/2024 as one of the best',
+        closeButton: true,
+        position:  'top-center'
+      }
+    )
+  }, [])
 
   const scroll = useScrollPercent();
 
