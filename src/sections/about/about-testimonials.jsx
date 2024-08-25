@@ -53,9 +53,13 @@ export function AboutTestimonials() {
 
       <m.div variants={varFade().inUp}>
         <Typography sx={{ color: 'common.white' }}>
-          Our goal is to create a product and service that you’re satisfied with and use it every
-          day. This is why we’re constantly working on our services to make it better every day and
-          really listen to what our users has to say.
+            Projectify! streamlines Python project setup, attracting beginners, busy developers, 
+            and teams seeking standardized configurations. It empowers those who value clean code
+            with integrated linting, formatting, and testing tools. Open-source enthusiasts and 
+            automation lovers will find a welcoming home, contributing to efficient workflows and 
+            enhancing the project. The ideal collaborators are passionate Python developers with 
+            problem-solving skills, excellent communication, and a strong community spirit, eager 
+            to build a successful open-source project.
         </Typography>
       </m.div>
 
