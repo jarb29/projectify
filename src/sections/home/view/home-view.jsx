@@ -1,4 +1,5 @@
 'use client';
+
 import Stack from '@mui/material/Stack';
 
 import { BackToTop } from 'src/components/animate/back-to-top';
