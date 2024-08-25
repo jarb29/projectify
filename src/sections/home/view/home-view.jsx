@@ -22,7 +22,7 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 // ----------------------------------------------------------------------
 
 export function HomeView() {
-  const pageProgress = useScrollProgress();
+
   useEffect(() => {
     toast.warning('Projectify', 
       {
@@ -34,6 +34,7 @@ export function HomeView() {
       }
     )
   }, [])
+  const pageProgress = useScrollProgress();
 
   return (
     <>
