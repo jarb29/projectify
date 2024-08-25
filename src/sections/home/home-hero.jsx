@@ -55,7 +55,19 @@ export function HomeHero({ sx, ...other }) {
   );
 
   const renderHeading = (
-    <MInview>       
+    
+    <MInview> 
+                {toast.warning('Projectify', 
+        {
+                // style: { background: 'red' },
+                duration: '2000',
+                id: ' ',
+                description: 'Born on 01/06/2024 as one of the best',
+                closeButton: true,
+                position:  'top-center'
+              })
+            }   
+           
 
       <Box
         component="h1"
