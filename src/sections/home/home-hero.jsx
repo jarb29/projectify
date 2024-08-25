@@ -36,6 +36,7 @@ const mdKey = 'md';
 const lgKey = 'lg';
 
 export function HomeHero({ sx, ...other }) {
+  const [render, setIRender] = useState(true);
   const theme = useTheme();
 
   const scroll = useScrollPercent();
@@ -76,31 +77,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 72, lineHeight: '90px' },
         }}
       >
-        {toast.warning('Projectify', 
-        {
-          duration: '2000',
-          id: ' ',
-          description: 'Born on 01/06/2024 ...........',
-          position:  'top-center',
-          closeButton: false,
-          action: (
-            <div>
 
-              <Button
-                size="small"
-                color="warning"                  
-                onClick={() => {
-                  console.info('Action!');
-                  toast.dismiss(' ');
-                  }}
-                >
-                    Close
-                  </Button>
-                </div>
-              ),
-            }
-          )
-        }
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
           Boost your 
         </Box>
@@ -320,13 +297,31 @@ export function HomeHero({ sx, ...other }) {
       }}
       {...other}
     >
-            {/* {toast.warning('Projectify', {
-                id: ' ',
-                description: 'Born on 01/06/2024 as one of the best',
-                closeButton: true,
-                position:  'top-right'
-              })
-            }     */}
+        {render && toast.warning('Projectify', 
+        {
+          duration: '2000',
+          id: ' ',
+          description: 'Born on 01/06/2024 ...........',
+          position:  'top-center',
+          closeButton: false,
+          action: (
+            <div>
+
+              <Button
+                size="small"
+                color="warning"                  
+                onClick={() => {
+                  setIRender(false);
+                  toast.dismiss(' ');
+                  }}
+                >
+                    Close
+                  </Button>
+                </div>
+              ),
+            }
+          )
+        }
       <Box
         component={m.div}
         style={{ opacity }}
