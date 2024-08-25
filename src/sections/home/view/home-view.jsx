@@ -32,9 +32,7 @@ export function HomeView() {
       />
 
       <BackToTop />
-
- 
-
+      
       <HomeHero />
 
       <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>
