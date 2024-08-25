@@ -182,8 +182,9 @@ export function HeaderBase({
                 </Button>
               <IconButton  
               variant="outlined"
+              target="_blank"
               rel="noopener"
-              href={paths.contact}
+              href='https://x.com/CyberMath4'
 
               sx={{
                 display: 'none',

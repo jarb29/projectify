@@ -291,13 +291,13 @@ export function HomeHero({ sx, ...other }) {
       }}
       {...other}
     >
-            {toast.warning('Projectify', {
+            {/* {toast.warning('Projectify', {
                 id: ' ',
                 description: 'Born on 01/06/2024 as one of the best',
                 closeButton: true,
                 position:  'top-right'
               })
-            }    
+            }     */}
       <Box
         component={m.div}
         style={{ opacity }}

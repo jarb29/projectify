@@ -1,7 +1,7 @@
 'use client';
 
 import Stack from '@mui/material/Stack';
-
+import { toast } from 'src/components/snackbar';
 import { BackToTop } from 'src/components/animate/back-to-top';
 import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll-progress';
 
@@ -33,6 +33,17 @@ export function HomeView() {
       />
 
       <BackToTop />
+
+      {toast.warning('Projectify', 
+        {
+                // style: { background: 'red' },
+                duration: '6000',
+                id: ' ',
+                description: 'Born on 01/06/2024 as one of the best',
+                closeButton: true,
+                position:  'top-center'
+              })
+            }   
 
       <HomeHero />
 
