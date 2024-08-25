@@ -6,6 +6,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
+
 import { Logo } from 'src/components/logo';
 import { Iconify } from 'src/components/iconify';
 import IconButton from '@mui/material/IconButton';
@@ -116,6 +117,7 @@ export function HeaderBase({
         rightArea: (
           
           <>
+
 
             {slots?.rightAreaStart}
 

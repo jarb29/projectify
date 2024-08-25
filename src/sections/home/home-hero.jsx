@@ -10,7 +10,7 @@ import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
-import { toast } from 'src/components/snackbar';
+
 
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
@@ -57,16 +57,7 @@ export function HomeHero({ sx, ...other }) {
   const renderHeading = (
     
     <MInview> 
-                {toast.warning('Projectify', 
-        {
-                // style: { background: 'red' },
-                duration: '2000',
-                id: ' ',
-                description: 'Born on 01/06/2024 as one of the best',
-                closeButton: true,
-                position:  'top-center'
-              })
-            }   
+
            
 
       <Box
