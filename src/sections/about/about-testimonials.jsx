@@ -61,7 +61,7 @@ export function AboutTestimonials() {
         </Typography>
       </m.div>
 
-      {!mdUp && (
+      {/* {!mdUp && (
         <Box
           component={m.div}
           variants={varFade().inUp}
@@ -69,7 +69,7 @@ export function AboutTestimonials() {
         >
           {renderLink}
         </Box>
-      )}
+      )} */}
     </Box>
   );
 
