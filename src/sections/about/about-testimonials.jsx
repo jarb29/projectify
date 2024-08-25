@@ -57,9 +57,7 @@ export function AboutTestimonials() {
             and teams seeking standardized configurations. It empowers those who value clean code
             with integrated linting, formatting, and testing tools. Open-source enthusiasts and 
             automation lovers will find a welcoming home, contributing to efficient workflows and 
-            enhancing the project. The ideal collaborators are passionate Python developers with 
-            problem-solving skills, excellent communication, and a strong community spirit, eager 
-            to build a successful open-source project.
+            enhancing the project. 
         </Typography>
       </m.div>
 
