@@ -29,7 +29,7 @@ export function HomeView() {
           {toast.warning('Projectify', 
         {
                 // style: { background: 'red' },
-                duration: '1000',
+                duration: '2000',
                 id: ' ',
                 description: 'Born on 01/06/2024 as one of the best',
                 closeButton: true,
