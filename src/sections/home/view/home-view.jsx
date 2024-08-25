@@ -26,15 +26,7 @@ export function HomeView() {
 
   return (
     <>
-      <ScrollProgress
-        variant="linear"
-        progress={pageProgress.scrollYProgress}
-        sx={{ position: 'fixed' }}
-      />
-
-      <BackToTop />
-
-      {toast.warning('Projectify', 
+          {toast.warning('Projectify', 
         {
                 // style: { background: 'red' },
                 duration: '6000',
@@ -43,7 +35,16 @@ export function HomeView() {
                 closeButton: true,
                 position:  'top-center'
               })
-            }   
+            }  
+      <ScrollProgress
+        variant="linear"
+        progress={pageProgress.scrollYProgress}
+        sx={{ position: 'fixed' }}
+      />
+
+      <BackToTop />
+
+ 
 
       <HomeHero />
 
