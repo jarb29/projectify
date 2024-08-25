@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+'use client';
 
 import Stack from '@mui/material/Stack';
 import { toast } from 'src/components/snackbar';
+
 import { BackToTop } from 'src/components/animate/back-to-top';
 import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll-progress';
 
@@ -24,22 +25,6 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 export function HomeView() {
   const pageProgress = useScrollProgress();
 
-
-  useEffect(() => {
-    toast.warning('Projectify', 
-      {
-        duration: '2000',
-        id: ' ',
-        description: 'Born on 01/06/2024 as one of the best',
-        closeButton: true,
-        position:  'top-center'
-      }
-    )
-  }, [])
-
-
-  
-
   return (
     <>
       <ScrollProgress
@@ -49,6 +34,15 @@ export function HomeView() {
       />
 
       <BackToTop />
+      {toast.warning('Projectify', 
+      {
+        duration: '2000',
+        id: ' ',
+        description: 'Born on 01/06/2024 as one of the best',
+        closeButton: true,
+        position:  'top-center'
+      }
+    )}
 
  
 
