@@ -106,7 +106,7 @@ export function HomeMinimal({ sx, ...other }) {
       sx={{
         overflow: 'hidden',
         position: 'relative',
-        py: { xs: 10, md: 20 },
+        py: { xs: 5, md: 5 },
         ...sx,
       }}
       {...other}
@@ -157,7 +157,7 @@ export function HomeMinimal({ sx, ...other }) {
             sx={{
               display: { xs: 'none', md: 'block' },
               position: 'absolute',
-              top: { md: '20%', lg: '15%' },
+              top: { md: '10%', lg: '15%' },
               right: { md: '10%', lg: '15%' },
               width: { md: '30%', lg: '25%' },
               maxWidth: 400,

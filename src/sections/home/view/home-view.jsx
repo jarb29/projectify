@@ -22,7 +22,6 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 export function HomeView() {
   const pageProgress = useScrollProgress();
 
-
   return (
     <>
       <ScrollProgress
@@ -32,7 +31,7 @@ export function HomeView() {
       />
 
       <BackToTop />
-      
+
       <HomeHero />
 
       <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>

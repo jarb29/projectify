@@ -25,7 +25,7 @@ export function Terminal() {
   return (
     <Box
       sx={{
-        width: '100%',
+        width: '95%',
         borderRadius: 2,
         overflow: 'hidden',
         bgcolor: 'grey.900',
@@ -34,6 +34,7 @@ export function Terminal() {
         fontSize: '0.875rem',
         position: 'relative',
         boxShadow: 3,
+        pb: 1,
       }}
     >
       <Box sx={{ p: 2 }}>
