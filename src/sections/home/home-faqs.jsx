@@ -26,7 +26,7 @@ const FAQs = [
     question: 'Project Structure Creation?',
     answer: (
       <Typography>
-        Generates the basic project structure 
+        Generates the basic project structure
         {/* <Link
           href="https://support.mui.com/hc/en-us/articles/360008775240-How-do-I-get-access-to-an-item-I-purchased"
           target="_blank"
@@ -53,8 +53,8 @@ const FAQs = [
           (SAAS...).
         </li> */}
         {/* <li> */}
-          {/* Learn more about the */}
-          {/* <Link
+        {/* Learn more about the */}
+        {/* <Link
             href="https://docs.minimals.cc/package/"
             target="_blank"
             rel="noopener"
@@ -94,11 +94,7 @@ const FAQs = [
   },
   {
     question: 'Necessary Packages Installation?',
-    answer: (
-      <Typography>
-          Installs packages like ruff, pre-commit, mkdocs, mkdocstrings.
-      </Typography>
-    ),
+    answer: <Typography>Installs packages like ruff, pre-commit, mkdocs, mkdocstrings.</Typography>,
   },
   {
     question: 'IDE Configuration?',
@@ -140,7 +136,7 @@ const FAQs = [
     question: 'Testing Configuration?',
     answer: (
       <Typography>
-       Sets up pytest for unit testing.
+        Sets up pytest for unit testing.
         {/* <Link
           href="https://mui.com/store/items/minimal-dashboard-free/"
           target="_blank"
@@ -272,9 +268,7 @@ export function HomeFAQs({ sx, ...other }) {
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-          Please contact us
-        </Typography>
+        <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>Please contact us</Typography>
       </m.div>
 
       <m.div variants={varFade().in}>

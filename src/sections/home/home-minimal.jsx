@@ -2,9 +2,11 @@ import { m } from 'framer-motion';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
+
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { Terminal } from 'src/sections/home/terminal-component'; // Adjust the import path as necessary
 
 import { CONFIG } from 'src/config-global';
 import { varAlpha, stylesMode } from 'src/theme/styles';
@@ -113,17 +115,54 @@ export function HomeMinimal({ sx, ...other }) {
         {renderLines}
 
         <Container sx={{ position: 'relative' }}>
-          <Grid container columnSpacing={{ xs: 0, md: 8 }} sx={{ position: 'relative', zIndex: 9 }}>
-            <Grid xs={12} md={6} lg={7}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 8 }}
+            sx={{
+              position: 'relative',
+              zIndex: 9,
+              alignItems: 'center', // Align items vertically
+            }}
+          >
+            <Grid item xs={12} md={6} lg={7}>
               {renderDescription}
             </Grid>
-
-            <Grid md={6} lg={5} sx={{ display: { xs: 'none', md: 'block' } }}>
-              {renderImg}
+            <Grid
+              item
+              xs={12}
+              md={6}
+              lg={5}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                paddingTop: { xs: 4, md: 8, lg: 12 },
+                paddingBottom: { xs: 4, md: 0 }, // Add some bottom padding on small screens
+              }}
+            >
+              <Terminal
+                sx={{
+                  width: '100%',
+                  maxWidth: { xs: '100%', sm: '500px', md: '100%' },
+                  mx: 'auto', // Center horizontally
+                }}
+              />
+              {/* {renderImg} */}
             </Grid>
           </Grid>
 
-          <CircleSvg variants={varFade().in} sx={{ display: { xs: 'none', md: 'block' } }} />
+          <CircleSvg
+            variants={varFade().in}
+            sx={{
+              display: { xs: 'none', md: 'block' },
+              position: 'absolute',
+              top: { md: '20%', lg: '15%' },
+              right: { md: '10%', lg: '15%' },
+              width: { md: '30%', lg: '25%' },
+              maxWidth: 400,
+            }}
+          />
         </Container>
       </MotionViewport>
     </Stack>
@@ -136,26 +175,31 @@ const ITEMS = [
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-make-brand.svg`,
     title: 'Structuring',
-    description: 'Projectify! automates this process, ensuring a consistent and professional structure.',
+    description:
+      'Projectify! automates this process, ensuring a consistent and professional structure.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-design.svg`,
     title: 'Environment Setup',
-    description: 'Projectify! creates virtual environments, configures the IDE, and prepares everything needed to start coding immediately.',
+    description:
+      'Projectify! creates virtual environments, configures the IDE, and prepares everything needed to start coding immediately.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
     title: 'Testing',
-    description: 'Projectify! sets up pytest so you can start writing and running tests right away.',
+    description:
+      'Projectify! sets up pytest so you can start writing and running tests right away.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
     title: 'Linter and Formatter',
-    description: 'Projectify! configures Ruff to ensure your code follows best practices and quality standards.',
+    description:
+      'Projectify! configures Ruff to ensure your code follows best practices and quality standards.',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
     title: 'Automatic Documentation',
-    description: 'MkDocs and mkdocstrings, makes easy to create useful and professional documentation.',
+    description:
+      'MkDocs and mkdocstrings, makes easy to create useful and professional documentation.',
   },
 ];

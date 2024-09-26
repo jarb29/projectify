@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 
 import { AccountBillingPlan } from './account-billing-plan';
 import { AccountBillingPayment } from './account-billing-payment';

@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 
 import { CONFIG } from 'src/config-global';
 
@@ -48,14 +48,15 @@ export function HomeIntegrations({ sx, ...other }) {
       description={
         <>
           <Box component="span" sx={{ mb: 1, display: 'block' }}>
-          Generates the basic project structure with predefined folders and files.
+            Generates the basic project structure with predefined folders and files.
           </Box>
           <Box
             component="span"
             sx={{ fontStyle: 'italic', color: 'text.disabled', typography: 'caption' }}
           >
             * Base Files Configuration.
-            <br />* Configures essential files like pyproject.toml, .gitignore, Makefile, among others.
+            <br />* Configures essential files like pyproject.toml, .gitignore, Makefile, among
+            others.
           </Box>
         </>
       }

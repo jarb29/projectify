@@ -4,13 +4,14 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
+
+import Grid from '@mui/material/Grid';
+
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
-
 
 import { _socials } from 'src/_mock';
 
@@ -74,8 +75,8 @@ export function Footer({ layoutQuery, sx }) {
                 [theme.breakpoints.up(layoutQuery)]: { mx: 'unset' },
               }}
             >
-              The starting point for your next project, built on the newest
-              version of Projectify©, ready to be customized to your style.
+              The starting point for your next project, built on the newest version of Projectify©,
+              ready to be customized to your style.
             </Typography>
 
             <Stack
@@ -161,7 +162,7 @@ export function HomeFooter({ sx }) {
         <Box sx={{ mt: 1, typography: 'caption' }}>
           © All rights reserved.
           <br /> made by
-          <Link href="mailto:jarb29@gmail.com?subject=Question from Customer" > jarb29 </Link>
+          <Link href="mailto:jarb29@gmail.com?subject=Question from Customer"> jarb29 </Link>
         </Box>
       </Container>
     </Box>

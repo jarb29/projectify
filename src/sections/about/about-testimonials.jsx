@@ -7,7 +7,7 @@ import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
@@ -53,11 +53,11 @@ export function AboutTestimonials() {
 
       <m.div variants={varFade().inUp}>
         <Typography sx={{ color: 'common.white' }}>
-            Projectify! streamlines Python project setup, attracting beginners, busy developers, 
-            and teams seeking standardized configurations. It empowers those who value clean code
-            with integrated linting, formatting, and testing tools. Open-source enthusiasts and 
-            automation lovers will find a welcoming home, contributing to efficient workflows and 
-            enhancing the project. 
+          Projectify! streamlines Python project setup, attracting beginners, busy developers, and
+          teams seeking standardized configurations. It empowers those who value clean code with
+          integrated linting, formatting, and testing tools. Open-source enthusiasts and automation
+          lovers will find a welcoming home, contributing to efficient workflows and enhancing the
+          project.
         </Typography>
       </m.div>
 
