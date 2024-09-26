@@ -22,7 +22,6 @@ export function Terminal() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
   return (
     <Box
       sx={{
