@@ -39,9 +39,9 @@ export function Terminal() {
       <Box sx={{ p: 2 }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
           <Box sx={{ display: 'flex', gap: 1 }}>
-            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'error.main' }}></Box>
-            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'warning.main' }}></Box>
-            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'success.main' }}></Box>
+            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'error.main' }} />
+            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'warning.main' }} />
+            <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: 'success.main' }} />
           </Box>
           <Button
             onClick={copyToClipboard}
