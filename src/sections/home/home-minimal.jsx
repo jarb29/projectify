@@ -7,7 +7,6 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { Terminal } from 'src/sections/home/terminal-component'; // Adjust the import path as necessary
-
 import { CONFIG } from 'src/config-global';
 import { varAlpha, stylesMode } from 'src/theme/styles';
 
@@ -148,6 +147,7 @@ export function HomeMinimal({ sx, ...other }) {
                   mx: 'auto', // Center horizontally
                 }}
               />
+
               {/* {renderImg} */}
             </Grid>
           </Grid>

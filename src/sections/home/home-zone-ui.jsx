@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-
+import { TreeStructure } from 'src/sections/home/tree-component';
 import { paths } from 'src/routes/paths';
 
 import { CONFIG } from 'src/config-global';
@@ -71,7 +71,8 @@ export function HomeZoneUI({ sx, ...other }) {
         pl: { xs: 5, sm: 0 }, // Add left padding for extra small screens
       }}
     >
-      <Box
+      <TreeStructure />
+      {/* <Box
         component="img"
         alt="Zone landing page"
         src={`${CONFIG.site.basePath}/assets/images/home/pes.webp`}
@@ -84,7 +85,7 @@ export function HomeZoneUI({ sx, ...other }) {
           borderRadius: { xs: '16px', md: '26px 26px 26px 26px' },
           border: (theme) => `solid 2px ${theme.vars.palette.common.white}`,
         }}
-      />
+      /> */}
     </Stack>
   );
 
