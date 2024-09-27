@@ -68,6 +68,7 @@ export function HomeZoneUI({ sx, ...other }) {
           filter: (theme) =>
             `drop-shadow(0 24px 48px ${varAlpha(theme.vars.palette.common.blackChannel, 0.16)})`,
         },
+        pl: { xs: 5, sm: 0 }, // Add left padding for extra small screens
       }}
     >
       <Box
@@ -75,30 +76,15 @@ export function HomeZoneUI({ sx, ...other }) {
         alt="Zone landing page"
         src={`${CONFIG.site.basePath}/assets/images/home/pes.webp`}
         sx={{
-          width: 720,
+          width: '100%',
+          maxWidth: { xs: '100%', sm: 540, md: 720 },
+          height: 'auto',
           objectFit: 'cover',
           aspectRatio: '16/10',
-          borderRadius: '16px 16px 0 16px',
+          borderRadius: { xs: '16px', md: '26px 26px 26px 26px' },
           border: (theme) => `solid 2px ${theme.vars.palette.common.white}`,
         }}
       />
-
-      {/* <Box sx={{ p: 0.5, borderRadius: '0 0 8px 8px', bgcolor: 'common.white' }}>
-        <Button
-          variant="contained"
-          target="_blank"
-          rel="noopener"
-          href={paths.zoneStore}
-          endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
-          sx={{
-            color: 'grey.800',
-            bgcolor: 'common.white',
-            '&:hover': { bgcolor: 'common.white' },
-          }}
-        >
-          Visit Zone UI
-        </Button>
-      </Box> */}
     </Stack>
   );
 

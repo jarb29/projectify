@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
 
-
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 import { toast } from 'src/components/snackbar';
@@ -46,7 +45,7 @@ export function HomeHero({ sx, ...other }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIRender(false);
-    }, 2000 ); // time is in milliseconds, so 2000 sec = 2000 * 1000 ms
+    }, 2000); // time is in milliseconds, so 2000 sec = 2000 * 1000 ms
 
     // clean up function
     return () => clearTimeout(timer);
@@ -67,54 +66,78 @@ export function HomeHero({ sx, ...other }) {
   );
 
   const renderHeading = (
-    
-    <MInview> 
-
-           
-
+    <MInview>
       <Box
         component="h1"
         display="flex"
-        flexWrap="wrap"
-        justifyContent="center"
+        flexDirection="column"
+        alignItems="center"
         sx={{
           ...theme.typography.h2,
           my: 0,
           mx: 'auto',
-          maxWidth: 680,
+          maxWidth: { xs: 680, md: 800, lg: 1000 },
           fontFamily: theme.typography.fontSecondaryFamily,
           [theme.breakpoints.up(lgKey)]: { fontSize: 72, lineHeight: '90px' },
         }}
       >
-
-        <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
-          Boost your 
+        <Box component="span" sx={{ opacity: 0.24, textAlign: 'center' }}>
+          Boost your
         </Box>
-        productivity with
-
+        <Box component="span" sx={{ textAlign: 'center' }}>
+          productivity with
+        </Box>
         <Box
-          component={m.span}
-          animate={{ backgroundPosition: '200% center' }}
-          transition={{
-            duration: 20,
-            ease: 'linear',
-            repeat: Infinity,
-            repeatType: 'reverse',
-          }}
           sx={{
-            ...textGradient(
-              `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
-            ),
-            backgroundSize: '400%',
-            ml: { xs: 0.75, md: 1, xl: 1.5 },
+            width: '100%',
+            maxWidth: { xs: '300px', sm: '400px', md: '600px', lg: '800px' },
+            overflow: 'hidden',
+            mt: 2,
           }}
         >
-      <Typography
-        variant="h1"
-      >
-          Projectify!
-        </Typography>
-      </Box>
+          <Box
+            component={m.span}
+            animate={{ backgroundPosition: '200% center' }}
+            transition={{
+              duration: 20,
+              ease: 'linear',
+              repeat: Infinity,
+              repeatType: 'reverse',
+            }}
+            sx={{
+              ...textGradient(
+                `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
+              ),
+              backgroundSize: '400%',
+              display: 'block',
+              width: '100%',
+            }}
+          >
+            <Typography
+              variant="h1"
+              aria-label="Projectify"
+              sx={{
+                whiteSpace: 'nowrap',
+                width: '100%',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                fontSize: {
+                  xs: '3rem',
+                  sm: '3rem',
+                  md: 'clamp(3rem, 8vw, 7rem)',
+                  lg: 'clamp(3rem, 9vw, 8rem)',
+                },
+                lineHeight: { xs: 1.2, md: 1 },
+                fontWeight: 'bold',
+                textAlign: 'center',
+                letterSpacing: { md: '-0.02em' },
+                textShadow: { md: '2px 2px 4px rgba(0,0,0,0.1)' },
+              }}
+            >
+              Projectify!
+            </Typography>
+          </Box>
+        </Box>
       </Box>
     </MInview>
   );
@@ -130,27 +153,27 @@ export function HomeHero({ sx, ...other }) {
         }}
       >
         The starting point for your next project based on
-        </Typography>
-        <Box
-          component={m.span}
-          animate={{ backgroundPosition: '200% center' }}
-          transition={{
-            duration: 20,
-            ease: 'linear',
-            repeat: Infinity,
-            repeatType: 'reverse',
-          }}
-          sx={{
-            ...textGradient(
-              `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
-            ),
-            backgroundSize: '400%',
-            ml: { xs: 0.75, md: 1, xl: 1.5 },
-          }}
-        >
-          Python
-        </Box>
-        <Typography
+      </Typography>
+      <Box
+        component={m.span}
+        animate={{ backgroundPosition: '200% center' }}
+        transition={{
+          duration: 20,
+          ease: 'linear',
+          repeat: Infinity,
+          repeatType: 'reverse',
+        }}
+        sx={{
+          ...textGradient(
+            `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
+          ),
+          backgroundSize: '400%',
+          ml: { xs: 0.75, md: 1, xl: 1.5 },
+        }}
+      >
+        Python
+      </Box>
+      <Typography
         variant="body2"
         sx={{
           mx: 'auto',
@@ -158,7 +181,7 @@ export function HomeHero({ sx, ...other }) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-      Easy customization to stay organized and helps.
+        Easy customization to stay organized and helps.
       </Typography>
       <Typography
         variant="body2"
@@ -306,31 +329,28 @@ export function HomeHero({ sx, ...other }) {
       }}
       {...other}
     >
-        {render && toast.warning('Projectify', 
-        {
+      {render &&
+        toast.warning('Projectify', {
           duration: '2000',
           id: ' ',
           description: 'Born on 01/06/2024 ...........',
-          position:  'top-center',
+          position: 'top-center',
           closeButton: false,
           action: (
             <div>
-
               <Button
                 size="small"
-                color="warning"                  
+                color="warning"
                 onClick={() => {
                   setIRender(false);
                   toast.dismiss(' ');
-                  }}
-                >
-                    Close
-                  </Button>
-                </div>
-              ),
-            }
-          )
-        }
+                }}
+              >
+                Close
+              </Button>
+            </div>
+          ),
+        })}
       <Box
         component={m.div}
         style={{ opacity }}
