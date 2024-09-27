@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ContentCopy, Check, FolderOpen, InsertDriveFile } from '@mui/icons-material';
-import { Box, Button, Typography, Fade } from '@mui/material';
+import { Check, ContentCopy, FolderOpen, InsertDriveFile } from '@mui/icons-material';
+import { Box, Button, Fade, Typography } from '@mui/material';
 
 export function TreeStructure() {
   const [copied, setCopied] = useState(false);
@@ -73,7 +73,7 @@ export function TreeStructure() {
         </Box>
         <Box sx={{ whiteSpace: 'pre-wrap' }}>
           {projectStructure.split('\n').map((line, index) => (
-            <Fade in={true} timeout={300 + index * 50} key={index}>
+            <Fade in timeout={300 + index * 50} key={index}>
               <Typography
                 sx={{
                   display: 'flex',
